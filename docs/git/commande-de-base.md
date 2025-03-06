@@ -23,3 +23,16 @@ Options disponibles :
 [git add] [*]              # [Ajoute tous les fichiers non cachés]
 [git add] [.]              # [Ajoute tous les fichiers]
 ```
+
+### [git commit]
+```bash
+[git commit]              # [Crée un nouveau commit]
+```
+
+Options disponibles :
+```bash
+[git commit] [-m] <"message">              # [Ajoute un message au commit]
+[git commit] [-am] <"message">              # [Ajoute à la zone de staging et commit tous les fichiers qui ont des changements]
+[git commit] [-amend] [-m] <"message">            # [Permet de modifier le dernier commit]
+[git commit] [-amend] [--no-edit]            # [modifier sans changer le message]
+```
