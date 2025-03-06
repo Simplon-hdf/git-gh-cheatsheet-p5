@@ -1,6 +1,6 @@
 ## [Commande de retour en arrière]
 
-### [rit reset]
+### [git reset]
 ```bash
 [git reset]              # [Renvoie la HEAD à un précédent commit]
 ```
@@ -14,4 +14,18 @@ Options disponibles :
 [git reset] [commit hash]               # [Retourne la HEAD au commit]
 [git reset] [--hard] [commit hash]               # [Retourne la HEAD au commit et supprime les modifications]
 [git reset] [--keep] [commit hash]               # [Retourne la HEAD au commit et garde les modifications]
+```
+### [git revert]
+```bash
+[git revert]            # [Crée un commit qui annule les modifications du commit spécifié]
+```
+
+Options disponibles :
+```bash
+[git revert] [HEAD]              # [Annule le dernier commit en créant un nouveau commit]
+[git revert] [commit hash]              # [Annule le commit spécifié en créant un nouveau commit]
+[git revert] [-n] [commit hash]              # [Annule le commit spécifié sans créer un nouveau commit]
+[git revert] [-m] [1] | [2]              # [Annule le merge et revient à l'état du parent choisi en créant un nouveau commit.]
+[git revert] [--continue]               # [Continue un revert qui cause un conflit]
+[git revert] [--abort]                # [Annule un revert qui cause un conflit]
 ```
