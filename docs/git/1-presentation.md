@@ -1,15 +1,81 @@
-# 1. Description de Git
+# 📘 [1-Presentation-Git]
 
 ![Git](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
 
-## **1.1 Qu'est-ce que Git ?** 
+## 📑 Table des matières
 
-Git est un système de gestion de versions qui permet de suivre les modifications apportées à un projet, généralement du code source. Il facilite la collaboration entre plusieurs développeurs en permettant de travailler simultanément sur le même projet sans écraser les modifications des autres.
+- [Introduction](#introduction)
+- [Concepts clés](#concepts-clés)
+- [Avantages](#avantages)
+- [Dans la pratique](#dans-la-pratique)
+- [Pour aller plus loin](#pour-aller-plus-loin)
 
-## **1.2 Quel est l'intérêt d'utiliser Git ? :**
+## 🎯 Introduction
 
-Git permet de conserver un historique détaillé de toutes les modifications effectuées dans un projet. On peut donc facilement revenir à une version précédente si un bug survient. Il peut y avoir aussi plusieurs développeurs sur un même projet sans écraser le travail des autres grâce aux branches et aux fusions.
+### Contexte
 
-## **1.3 Comment ça fonctionne concrètement ? :** 
+Dans le développement logiciel, il est essentiel de conserver un historique clair des modifications apportées au code et de permettre un travail collaboratif efficace. Git répond à ces besoins en assurant une gestion fiable et sécurisée des versions.
 
-Git est un logiciel qu'on installe sur notre ordinateur pour gérer les versions du code qu'on a créé. Il fonctionne en ligne de commande (ou avec une interface graphique) et permet d'enregistrer, partager et synchroniser son travail avec d'autres développeurs. Concrètement, **Git** sert à enregistrer son code, travailler à plusieurs sans écraser le travail des autres et revenir en arrière si besoin.
+### À qui s'adresse ce guide
+
+Ce guide s'adresse aux débutants qui souhaitent comprendre les bases de Git et apprendre à l'utiliser efficacement pour gérer leurs projets.
+
+## 💡 Concepts clés
+
+### [Repositories]
+
+- L'endroit où **Git** stocke l'historique des versions du projet.
+
+### [Commits]
+
+- Chaque **commit** représente un enregistrement des modifications apportées au projet. Il constitue un point de **sauvegarde** auquel on peut revenir si nécessaire.
+
+### [Branches]
+
+- Elles permettent de travailler sur différentes versions du projet en parallèle.
+
+### [Merge]
+
+- Combine les changements de différentes branches.
+
+### [Clone]
+
+- Copie d'un référentiel distant sur votre machine locale.
+
+### [Push/Pull]
+
+- Envoi ou récupération de modifications vers/depuis un dépôt distant.
+
+## ⭐ Avantages
+
+### [Historique détaillé et traçabilité]
+
+- Chaque modification est enregistrée avec un message de commit clair.
+- Possibilité de revenir à une version précédente en cas de bug.
+- Suivi précis des contributions de chaque développeur.
+
+### [Collaboration efficace]
+
+- Plusieurs développeurs peuvent travailler simultanément sur un projet.
+- Évite les conflits grâce au système de branches.
+- Permet de valider et fusionner du code en toute sécurité.
+
+## 🛠 Dans la pratique
+
+### [Fonctionnement de Git]
+
+**Git** est un logiciel que l'on installe sur son ordinateur pour gérer les versions du code. Il fonctionne principalement en ligne de commande (CLI), bien que des interfaces graphiques existent pour simplifier son utilisation.
+
+Avec **Git**, on peut :
+
+- **Enregistrer** son code et ses modifications dans des commits
+- **Travailler à plusieurs** grâce aux branches et aux merges, sans écraser le travail des autres.
+- **Revenir en arrière** en cas de problème grâce à l'historique des commits.
+- **Partager et synchroniser** son code sur un serveur distant comme **GitHub**, **GitLab** ou **Bitbucket**
+
+## 📚 Pour aller plus loin
+
+### Ressources utiles
+
+- [Documentation Git](https://git-scm.com/docs)
+- [Documentation GitHub](https://docs.github.com/fr)
