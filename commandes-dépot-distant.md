@@ -56,7 +56,7 @@ git push --tags                                   # Envoyer les tags
 ```bash
 git pull origin [branche]                          # Récupérer et fusionner les modifications
 ```
-Options disponibles :
+Options disponibles
 ```bash
 git fetch origin                                  # Récupérer sans fusionner
 git fetch --all                                   # Récupérer depuis tous les dépôts distants
@@ -64,20 +64,30 @@ git pull --rebase origin [branche]               # Récupérer en réappliquant 
 ```
 
 ## 👥 Collaboration
+
 ### 🌿 Gestion des Branches Distantes
+
 ```bash
 git branch -r                                      # Lister les branches distantes
+
 ```
+
 Options disponibles :
+
 ```bash
-git checkout -b [locale] origin/[distante]        # Créer une branche locale depuis une distante
+git checkout -b [locale] origin/[distante]        # (Ancienne méthode) Créer une branche locale depuis une distante
+git branch [locale] origin/[distante]             # Créer une branche locale depuis une distante
+git switch [locale]                              # Basculer sur la nouvelle branche
 git push origin --delete [branche]                # Supprimer une branche distante
 git fetch origin --prune                          # Nettoyer les branches supprimées
+
 ```
 
 ### 👀 Suivi des Modifications
+
 ```bash
 git branch -vv                                     # Voir les branches et leurs tracking
+
 ```
 Options disponibles :
 ```bash
