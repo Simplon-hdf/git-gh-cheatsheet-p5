@@ -6,8 +6,19 @@
 - [Collaboration](#collaboration)
 - [Notes d'utilisation](#notes-dutilisation)
 
-## Gestion du Dépôt Distant
-### Connexion au Dépôt
+## 🌐 Gestion du Dépôt Distant
+### Configuration de l'Upstream
+```bash
+git remote add upstream [url-repo-original]         # Ajouter le dépôt source comme upstream
+```
+Options disponibles :
+```bash
+git fetch upstream                                 # Récupérer les modifications de l'upstream
+git merge upstream/[branche]                       # Fusionner les modifications de l'upstream
+git pull upstream [branche]                        # Récupérer et fusionner depuis l'upstream
+```
+
+### 🔗 Connexion au Dépôt
 ```bash
 git remote add origin [url]                        # Lier un dépôt distant
 ```
@@ -18,7 +29,7 @@ git remote remove [nom]                           # Supprimer un dépôt distant
 git remote rename [ancien] [nouveau]              # Renommer un dépôt distant
 ```
 
-### Clonage et Configuration
+### 📥 Clonage et Configuration
 ```bash
 git clone [url]                                    # Cloner un dépôt distant
 ```
@@ -29,8 +40,8 @@ git clone --depth 1 [url]                         # Cloner uniquement le dernier
 git clone [url] [dossier]                         # Cloner dans un dossier spécifique
 ```
 
-## Synchronisation
-### Envoi des Modifications
+## 🔄 Synchronisation
+### 📤 Envoi des Modifications
 ```bash
 git push origin [branche]                          # Envoyer les commits vers le dépôt distant
 ```
@@ -41,7 +52,7 @@ git push --force-with-lease                       # Forcer le push (avec vérifi
 git push --tags                                   # Envoyer les tags
 ```
 
-### Récupération des Modifications
+### 📥 Récupération des Modifications
 ```bash
 git pull origin [branche]                          # Récupérer et fusionner les modifications
 ```
@@ -52,8 +63,8 @@ git fetch --all                                   # Récupérer depuis tous les 
 git pull --rebase origin [branche]               # Récupérer en réappliquant les commits locaux
 ```
 
-## Collaboration
-### Gestion des Branches Distantes
+## 👥 Collaboration
+### 🌿 Gestion des Branches Distantes
 ```bash
 git branch -r                                      # Lister les branches distantes
 ```
@@ -64,7 +75,7 @@ git push origin --delete [branche]                # Supprimer une branche distan
 git fetch origin --prune                          # Nettoyer les branches supprimées
 ```
 
-### Suivi des Modifications
+### 👀 Suivi des Modifications
 ```bash
 git branch -vv                                     # Voir les branches et leurs tracking
 ```
@@ -76,19 +87,32 @@ git remote show origin                            # Voir l'état détaillé du d
 ```
 
 ## 📝 Notes d'utilisation
-### Format des commandes
+### ⌨️ Format des commandes
 - [paramètre] : paramètre obligatoire
 - <paramètre> : paramètre optionnel
+- | : choix entre plusieurs options
 
-### Bonnes pratiques
+### ✅ Bonnes pratiques
 - Toujours faire un git fetch avant de commencer à travailler
 - Privilégier --force-with-lease à --force pour éviter d'écraser le travail des autres
 - Créer des branches locales pour chaque fonctionnalité
 
-### Points de vigilance
+### ⚠️ Points de vigilance
 - Ne jamais push --force sur main/master
 - Toujours vérifier la branche active avant un push
 - Résoudre les conflits localement avant de push
 
 ---
-*Ce guide se concentre sur les commandes Git pour travailler avec des dépôts distants. Pour la configuration locale et les commandes de base, référez-vous à la documentation générale de Git.* 
+
+## 📚 Pour aller plus loin
+
+### Documentation Officielle
+- [Git Remote Documentation](https://git-scm.com/docs/git-remote) - Documentation officielle sur les dépôts distants
+- [Git Book - Working with Remotes](https://git-scm.com/book/fr/v2/Les-bases-de-Git-Travailler-avec-des-d%C3%A9p%C3%B4ts-distants) - Chapitre sur les dépôts distants en français
+- [GitHub Docs](https://docs.github.com/fr) - Documentation GitHub en français
+
+### Guides Pratiques
+- [Atlassian Git Tutorial - Remote Repositories](https://www.atlassian.com/git/tutorials/syncing) - Guide détaillé sur la synchronisation
+- [GitHub Flow](https://docs.github.com/fr/get-started/quickstart/github-flow) - Workflow recommandé par GitHub
+
+*Ce guide se concentre sur les commandes Git pour travailler avec des dépôts distants. Pour approfondir vos connaissances, n'hésitez pas à consulter les ressources ci-dessus.*
