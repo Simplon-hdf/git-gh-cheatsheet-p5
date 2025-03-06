@@ -36,3 +36,15 @@ Options disponibles :
 [git commit] [-amend] [-m] <"message">            # [Permet de modifier le dernier commit]
 [git commit] [-amend] [--no-edit]            # [modifier sans changer le message]
 ```
+
+## [git status]
+```bash
+[git status]              # [Permet de montré quel fichier dans la zone de staging]
+```
+
+Options disponibles :
+```bash
+[git status] [-s] | [--short]             # [Montre une version simplifié]
+[git status] [---ignored]            # [Montre les fichiers ignorés]
+[git commit] [-amend] [-m] <"message">            # [Permet de modifier le dernier commit]
+[git commit] [-u] [no] | [all]            # [Ne montre pas les fichiers non suivis | Voir tous les fichiers"
