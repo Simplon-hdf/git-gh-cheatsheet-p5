@@ -1,4 +1,4 @@
-# 📘 [GitHub CLI]
+# 📘 GitHub CLI
 
 ![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
 
@@ -22,47 +22,47 @@ Ce guide s'adresse aux développeurs souhaitant optimiser leur flux de travail a
 
 ## 💡 Concepts clés
 
-### [GH CLI]
+### GH CLI
 
 - Interface en ligne de commande
 - Permet de gérer des dépôts, issues, pull requests, workflows GitHub Actions.
 - Fonctionne sur Windows, macOS et Linux.
 
-### [Authentification]
+### Authentification
 
 - Permet de connecter **GH CLI** à un compte GitHub pour interagir avec les dépôts et les ressources.
 - Utilisation de jetons d'accès pour sécuriser les actions.
 
-### [Gestion des dépôts]
+### Gestion des dépôts
 
 - Création, clonage et gestion des dépôts **GitHub**.
 - Accès rapide aux informations des dépôts.
 
-### [Issues et Pull Requests]
+### Issues et Pull Requests
 
 - Consultation et création d'issues directement depuis le terminal.
 - Gestion des pull requests sans ouvrir l'interface web.
 
-### [Workflows GitHub Actions]
+### Workflows GitHub Actions
 
 - Lancement et suivi des actions **GitHub** pour automatiser des tâches de déploiement ou de tests
 - Gestion des workflows sans passer par l'interface web.
 
 ## ⭐ Avantages
 
-### [Productivité améliorée]
+### Productivité améliorée
 
 - Évite les allers-retours entre le terminal et l'interface web de GitHub.
 - Accès rapide aux informations sans naviguer dans un navigateur.
 
-### [Expérience développeur fluide]
+### Expérience développeur fluide
 
 - S'intègre facilement avec Git et d'autres outils de développement.
 - Compatible avec tous les systèmes d'exploitation.
 
 ## 🛠 Dans la pratique
 
-### [Utilisation courante]
+### Utilisation courante
 
 GH CLI permet d'effectuer des opérations courantes sur **GitHub** telles que :
 
