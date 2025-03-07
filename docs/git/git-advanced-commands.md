@@ -44,4 +44,20 @@ git diff <branche1> <branche2>     # Affiche les différences entre deux branche
 git diff --stat                    # Affiche un résumé statistique des modifications
 ```
 
+## Git bisect
+
+### Déboguer avec la recherche binaire
+```bash
+git bisect start                   # Démarre une session de recherche binaire
+```
+
+Options disponibles :
+```bash
+git bisect bad                     # Marque le commit actuel comme "mauvais" (contient le bug)
+git bisect good <commit>           # Marque un commit comme "bon" (sans le bug)
+git bisect skip                    # Ignore le commit actuel et passe au suivant
+git bisect reset                   # Termine la session de bisect et restaure l'état initial
+git bisect run <test_script>       # Exécute un script pour automatiser la recherche
+```
+
 
