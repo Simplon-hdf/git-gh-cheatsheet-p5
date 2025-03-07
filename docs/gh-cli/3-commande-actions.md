@@ -5,7 +5,7 @@
 - [Gestion des actions](#gestion-des-actions)
 - [Gestion des workflows](#gestion-des-workflows)
 - [Gestion des Jobs et Runs](#gestion-des-jobs-et-runs)
-- [Notes d'utilisation](#notes-dutilisation)
+- [Notes d'utilisation](#📝-notes-dutilisation)
 
 ## Gestion des Actions
 
