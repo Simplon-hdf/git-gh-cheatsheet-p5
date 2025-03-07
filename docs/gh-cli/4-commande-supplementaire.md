@@ -78,3 +78,17 @@ gh config [set] [clé] [valeur] [--host] [hôte]  # Définir une valeur pour une
 [clé] = git_protocol | editor | prompt | prefer_editor_prompt | pager | http_unix_socket | browser
 
 ```
+
+### gh gpg-key
+```bash
+gh gpg-key                         # Gérer les clés GPG enregistrées dans votre compte GitHub
+
+```
+
+Options disponibles :
+```bash
+gh gpg-key [add] [chemin_clé]        # Ajouter une clé GPG à votre compte GitHub
+gh gpg-key [list]                    # Lister les clés GPG enregistrées dans votre compte
+gh gpg-key [delete] [clé_id]         # Supprimer une clé GPG de votre compte GitHub
+
+```
