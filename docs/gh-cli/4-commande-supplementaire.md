@@ -108,3 +108,17 @@ gh label [edit] [nom] <options>           # Modifier un label existant dans le d
 gh label [list] <options>                 # Lister tous les labels du dépôt
 
 ```
+
+### gh ruleset
+```bash
+gh ruleset                         # Gérer les ensembles de règles dans un dépôt GitHub
+
+```
+
+Options disponibles :
+```bash
+gh ruleset [check] [branche] [options]  # Vérifier les règles qui s'appliquent à une branche spécifique
+gh ruleset [list] [options]             # Lister les ensembles de règles pour un dépôt ou une organisation
+gh ruleset [view] [ID] [options]        # Afficher les détails d'un ensemble de règles spécifique
+
+```
