@@ -1,4 +1,4 @@
-# 🛠 [GitHub CLI] - Guide des Commandes
+# 🛠 GitHub CLI - Guide des Commandes
 
 ## 📑 Table des matières
 
@@ -7,9 +7,9 @@
 - [Gestion des pull requests](#gestion-des-pull-requests)
 - [Notes d'utilisation](#notes-dutilisation)
 
-## [Gestion des dépôts]
+## Gestion des dépôts
 
-### [Clôner un dépôt]
+### Clôner un dépôt
 
 ```bash
 gh repo clone [utilisateur]/[dépôt] # Clone un dépôt GitHub localement sur l'ordinateur
@@ -23,7 +23,7 @@ gh repo clone [utilisateur]/[dépôt] --depth [profondeur]        # Cloner un d�
 gh repo clone [utilisateur]/[dépôt] --quiet                     # Cloner sans afficher de sortie
 ```
 
-### [Créer un dépôt]
+### Créer un dépôt
 
 ```bash
 gh repo create [nom-dépôt]  # Créer un nouveau dépôt sur GitHub
@@ -37,9 +37,9 @@ gh repo create [nom-dépôt] --private                            # Créer un d�
 gh repo create [nom-dépôt] --description "<description>"        # Ajouter une description au dépôt
 ```
 
-## [Gestion des issues]
+## Gestion des issues
 
-### [Créer une issue]
+### Créer une issue
 
 ```bash
 gh issue create              # Crée une nouvelle issue sur le dépôt courant
@@ -53,7 +53,7 @@ gh issue create --body "[Description]"        # Créer une issue avec une descri
 gh issue create --label "[étiquette]"         # Ajouter une étiquette à l'issue
 ```
 
-### [Lister les issues]
+### Lister les issues
 
 ```bash
 gh issue list              # Lister les issues ouvertes dans le dépôt courant
@@ -67,9 +67,9 @@ gh issue list --label "[étiquette]"         # Filtrer par étiquette
 gh issue list --assignee "[utilisateur]"    # Filtrer par assigné
 ```
 
-## [Gestion des pull requests]
+## Gestion des pull requests
 
-### [Créer une pull request]
+### Créer une pull request
 
 ```bash
 gh pr create              # Créer une pull request à partir de la branche actuelle
@@ -83,7 +83,7 @@ gh pr create --title "[Titre]"                    # Ajouter un titre à la PR
 gh pr create --body "[Description]"               # Ajouter une description à la PR
 ```
 
-### [Lister les pull requests]
+### Lister les pull requests
 
 ```bash
 gh pr list              # Lister les pull requests ouvertes
