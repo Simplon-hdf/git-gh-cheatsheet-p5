@@ -1,4 +1,4 @@
-# 🛠 [Git] - Guide des Commandes
+# 🛠 Git - Guide des Commandes
 
 ## 📑 Table des matières
 - [Commande de base](#Commande-de-base)
@@ -71,7 +71,6 @@ git log [--grep="fix"]           # Recherche des commits contenant un mot-clé d
 git log [-p]                     # Affiche les différences (patch) pour chaque commit
 git log [--stat]                 # Affiche un résumé des fichiers modifiés
 ```
-
 
 ## 📝 Notes d'utilisation
 
