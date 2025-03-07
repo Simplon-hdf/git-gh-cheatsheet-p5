@@ -62,3 +62,19 @@ gh completion [-s] [zsh]               # Génère un script de complétion pour 
 gh completion [-s] [fish]              # Génère un script de complétion pour Fish
 
 ```
+### gh config
+```bash
+gh config                          # Afficher ou modifier les paramètres de configuration de gh
+
+```
+
+Options disponibles :
+```bash
+gh config [get] [clé]                # Afficher la valeur d'une clé de configuration spécifique
+gh config [set] [clé] [valeur]       # Définir une valeur pour une clé de configuration spécifique
+gh config [list]                     # Afficher toutes les clés de configuration et leurs valeurs
+gh config [set] [clé] [valeur] [--host] [hôte]  # Définir une valeur pour une clé de configuration spécifique à un hôte
+
+[clé] = git_protocol | editor | prompt | prefer_editor_prompt | pager | http_unix_socket | browser
+
+```
