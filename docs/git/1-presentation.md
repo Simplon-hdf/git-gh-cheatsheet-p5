@@ -1,4 +1,4 @@
-# 📘 [1-Presentation-Git]
+# 📘 1-Presentation-Git
 
 ![Git](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
 
@@ -22,39 +22,39 @@ Ce guide s'adresse aux débutants qui souhaitent comprendre les bases de Git et 
 
 ## 💡 Concepts clés
 
-### [Repositories]
+### Repositories
 
 - L'endroit où **Git** stocke l'historique des versions du projet.
 
-### [Commits]
+### Commits
 
 - Chaque **commit** représente un enregistrement des modifications apportées au projet. Il constitue un point de **sauvegarde** auquel on peut revenir si nécessaire.
 
-### [Branches]
+### Branches
 
 - Elles permettent de travailler sur différentes versions du projet en parallèle.
 
-### [Merge]
+### Merge
 
 - Combine les changements de différentes branches.
 
-### [Clone]
+### Clone
 
 - Copie d'un référentiel distant sur votre machine locale.
 
-### [Push/Pull]
+### Push/Pull
 
 - Envoi ou récupération de modifications vers/depuis un dépôt distant.
 
 ## ⭐ Avantages
 
-### [Historique détaillé et traçabilité]
+### Historique détaillé et traçabilité
 
 - Chaque modification est enregistrée avec un message de commit clair.
 - Possibilité de revenir à une version précédente en cas de bug.
 - Suivi précis des contributions de chaque développeur.
 
-### [Collaboration efficace]
+### Collaboration efficace
 
 - Plusieurs développeurs peuvent travailler simultanément sur un projet.
 - Évite les conflits grâce au système de branches.
@@ -62,7 +62,7 @@ Ce guide s'adresse aux débutants qui souhaitent comprendre les bases de Git et 
 
 ## 🛠 Dans la pratique
 
-### [Fonctionnement de Git]
+### Fonctionnement de Git
 
 **Git** est un logiciel que l'on installe sur son ordinateur pour gérer les versions du code. Il fonctionne principalement en ligne de commande (CLI), bien que des interfaces graphiques existent pour simplifier son utilisation.
 
