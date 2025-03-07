@@ -175,6 +175,19 @@ gh ssh-key [delete] [clé_id] <options>      # Supprimer une clé SSH de votre c
 
 ```
 
+### gh status
+
+```bash
+gh status                          # Afficher un aperçu des activités récentes sur GitHub
+```
+
+Options disponibles :
+
+```bash
+gh status [-e] | [--exclude] [repo] <repo2>     # Exclure un ou plusieurs dépôts spécifiques des résultats
+gh status [-o],| [--org] [organisation>]   # Limiter les résultats à une organisation spécifique
+
+```
 
 
 
