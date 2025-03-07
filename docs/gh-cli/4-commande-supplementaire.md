@@ -92,3 +92,19 @@ gh gpg-key [list]                    # Lister les clés GPG enregistrées dans v
 gh gpg-key [delete] [clé_id]         # Supprimer une clé GPG de votre compte GitHub
 
 ```
+
+### gh label
+```bash
+gh label                           # Gérer les labels dans un dépôt GitHub
+
+```
+
+Options disponibles :
+```bash
+gh label [clone] [source_repo] <options>  # Cloner les labels d'un dépôt source vers un dépôt cible
+gh label [create] [nom] <options>         # Créer un nouveau label dans le dépôt
+gh label [delete] [nom] <options>         # Supprimer un label existant du dépôt
+gh label [edit] [nom] <options>           # Modifier un label existant dans le dépôt
+gh label [list] <options>                 # Lister tous les labels du dépôt
+
+```
