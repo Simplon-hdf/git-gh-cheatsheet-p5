@@ -20,7 +20,7 @@ git init [-b] <nom de la branche>             # Choisir le nom de la première b
 
 ### git add
 ```bash
-git add              # Ajoute un ou plusieurs fichier(s) dans la zone de staging.
+git add ["nom du fichier 1"]             # Ajoute un fichier dans la zone de staging.
 ```
 
 Options disponibles :
@@ -32,14 +32,14 @@ git add [.]              # Ajoute tous les fichiers
 
 ### git commit
 ```bash
-git commit              # Crée un nouveau commit
+git commit [-m] ["message"]             # Crée un nouveau commit avec un message
 ```
 
 Options disponibles :
 ```bash
-git commit [-m] <"message">              # Ajoute un message au commit
-git commit [-am] <"message">              # Ajoute à la zone de staging et commit tous les fichiers qui ont des changements
-git commit [-amend] [-m] <"message">            # Permet de modifier le dernier commit
+git commit [-m] ["message"]              # Ajoute un message au commit
+git commit [-am] ["message"]              # Ajoute à la zone de staging et commit tous les fichiers qui ont des changements
+git commit [-amend] [-m] ["message"]            # Permet de modifier le message du dernier commit
 git commit [-amend] [--no-edit]            # modifier sans changer le message
 ```
 
@@ -80,12 +80,14 @@ git log [--stat]                 # Affiche un résumé des fichiers modifiés
 - | : choix entre plusieurs options
 
 ### Bonnes pratiques
-- [Conseil d'utilisation 1]
-- [Conseil d'utilisation 2]
-- [Conseil d'utilisation 3]
+- Initialiser le dépôt dans le dossier approprié pour éviter d'avoir des fichiers en trop.
+- Vérifier l'état des fichiers avant un commit avec git status
+- Utiliser une convention pour les messages des commits
+- Faire des commits petits et cohérents pour pouvoir se retrouver facilement.
+
 
 ### Points de vigilance
-- [Avertissement 1]
-- [Avertissement 2]
-- [Avertissement 3]
+- Ne pas utiliser git commit --amend après un push pour éviter des conflits
+- Ne pas utiliser git add . sans vérifier les fichiers ajoutés pour ne pas commit des fichiers sensibles.
+
 
