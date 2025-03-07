@@ -115,3 +115,20 @@ git merge upstream/main            # Fusionne la branche main du dépôt distant
 git pull upstream main             # Récupère les modifications de la branche main du dépôt distant upstream et les fusionne dans la branche locale courante
 ```
 
+## 📝 Notes d'utilisation
+
+### Format des commandes
+- < > : paramètre optionnel
+
+### Bonnes pratiques
+- Créez des branches pour chaque nouvelle fonctionnalité ou correctif
+- Utilisez des noms de branches descriptifs (feature/nom-fonctionnalité, bugfix/problème)
+- Synchronisez régulièrement vos branches avec la branche principale
+- Préférez le rebase pour garder un historique propre avant de fusionner dans main/master
+
+### Points de vigilance
+- Utilisez `git push --force` avec précaution car cela peut effacer le travail d'autres personnes
+- Résolvez toujours complètement les conflits avant de terminer un merge/rebase
+- N'utilisez pas rebase sur des branches partagées/publiées
+- Vérifiez toujours que vous êtes sur la bonne branche avant de commencer à travailler
+
