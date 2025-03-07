@@ -154,9 +154,9 @@ gh secret                          # Gérer les secrets GitHub au niveau du dép
 Options disponibles :
 
 ```bash
-gh secret set <nom> [options]      # Créer ou mettre à jour un secret
-gh secret list [options]           # Lister les secrets existants
-gh secret remove <nom> [options]   # Supprimer un secret
+gh secret [set] [nom] <options>      # Créer ou mettre à jour un secret
+gh secret [list] <options>           # Lister les secrets existants
+gh secret [remove] [nom] <options>   # Supprimer un secret
 
 ```
 ### gh ssh-key
@@ -169,9 +169,9 @@ gh ssh-key                         # Gérer les clés SSH associées à votre co
 Options disponibles :
 
 ```bash
-gh ssh-key add <fichier_clé> [options]    # Ajouter une nouvelle clé SSH à votre compte GitHub
-gh ssh-key list [options]                 # Lister les clés SSH actuellement associées à votre compte
-gh ssh-key delete <clé_id> [options]      # Supprimer une clé SSH de votre compte GitHub
+gh ssh-key [add] [fichier_clé] <options>    # Ajouter une nouvelle clé SSH à votre compte GitHub
+gh ssh-key [list] <options>                 # Lister les clés SSH actuellement associées à votre compte
+gh ssh-key [delete] [clé_id] <options>      # Supprimer une clé SSH de votre compte GitHub
 
 ```
 
