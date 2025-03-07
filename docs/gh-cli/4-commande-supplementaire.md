@@ -42,6 +42,7 @@ gh attestation                     # Gérer les attestations d'artefacts dans Gi
 ```
 
 Options disponibles :
+
 ```bash
 gh attestation [download] [artefact]  # Télécharger les attestations associées à un artefact
 gh attestation [verify] [artefact]    # Vérifier l'intégrité et l'authenticité d'un artefact
@@ -56,6 +57,7 @@ gh completion -s <shell>           # Génère des scripts de complétion pour le
 ```
 
 Options disponibles :
+
 ```bash
 gh completion [-s] [bash]              # Génère un script de complétion pour Bash
 gh completion [-s] [zsh]               # Génère un script de complétion pour Zsh
@@ -69,6 +71,7 @@ gh config                          # Afficher ou modifier les paramètres de con
 ```
 
 Options disponibles :
+
 ```bash
 gh config [get] [clé]                # Afficher la valeur d'une clé de configuration spécifique
 gh config [set] [clé] [valeur]       # Définir une valeur pour une clé de configuration spécifique
@@ -86,6 +89,7 @@ gh gpg-key                         # Gérer les clés GPG enregistrées dans vot
 ```
 
 Options disponibles :
+
 ```bash
 gh gpg-key [add] [chemin_clé]        # Ajouter une clé GPG à votre compte GitHub
 gh gpg-key [list]                    # Lister les clés GPG enregistrées dans votre compte
@@ -116,9 +120,27 @@ gh ruleset                         # Gérer les ensembles de règles dans un dé
 ```
 
 Options disponibles :
+
 ```bash
 gh ruleset [check] [branche] [options]  # Vérifier les règles qui s'appliquent à une branche spécifique
 gh ruleset [list] [options]             # Lister les ensembles de règles pour un dépôt ou une organisation
 gh ruleset [view] [ID] [options]        # Afficher les détails d'un ensemble de règles spécifique
+
+```
+
+### gh search
+```bash
+gh search [sous-commande] [arguments] [options]  # Rechercher des dépôts, des issues, des pull requests, du code ou des commits sur GitHub
+
+```
+
+Options disponibles :
+
+```bash
+gh search [repos] [mot-clé] <options>    # Rechercher des dépôts correspondant à des mots-clés
+gh search [issues] [mot-clé] <options>   # Rechercher des issues correspondant à des mots-clés
+gh search [prs] [mot-clé] <options>      # Rechercher des pull requests correspondant à des mots-clés
+gh search [code] [mot-clé] <options>     # Rechercher du code correspondant à des mots-clés
+gh search [commits] [mot-clé] <options>  # Rechercher des commits correspondant à des mots-clés
 
 ```
