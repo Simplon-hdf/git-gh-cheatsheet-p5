@@ -204,5 +204,12 @@ gh variable [delete] [nom] <options> # Supprimer une variable
 
 ```
 
+## 📝 Notes d'utilisation
+
+### Format des commandes
+
+- [ ] : paramètre obligatoire
+- < > : paramètre optionnel
+- | : choix entre plusieurs options
 
 
