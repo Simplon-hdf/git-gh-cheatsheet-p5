@@ -52,16 +52,15 @@ gh attestation [trusted-root]         # Afficher le fichier `trusted_root.jsonl`
 
 ### gh completion
 ```bash
-gh completion -s <shell>           # Génère des scripts de complétion pour le shell spécifié
+gh completion           # Génère des scripts de complétion 
 
 ```
 
 Options disponibles :
 
 ```bash
-gh completion [-s] [bash]              # Génère un script de complétion pour Bash
-gh completion [-s] [zsh]               # Génère un script de complétion pour Zsh
-gh completion [-s] [fish]              # Génère un script de complétion pour Fish
+gh completion [-s] [bash] | [zsh] | [fish]             # Génère un script de complétion pour le shell
+
 
 ```
 ### gh config
