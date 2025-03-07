@@ -144,3 +144,19 @@ gh search [code] [mot-clé] <options>     # Rechercher du code correspondant à 
 gh search [commits] [mot-clé] <options>  # Rechercher des commits correspondant à des mots-clés
 
 ```
+
+### gh secret
+```bash
+gh secret                          # Gérer les secrets GitHub au niveau du dépôt, de l'organisation ou de l'utilisateur
+
+```
+
+Options disponibles :
+
+```bash
+gh secret set <nom> [options]      # Créer ou mettre à jour un secret
+gh secret list [options]           # Lister les secrets existants
+gh secret remove <nom> [options]   # Supprimer un secret
+
+```
+
