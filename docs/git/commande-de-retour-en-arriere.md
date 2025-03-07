@@ -1,12 +1,12 @@
-# 🛠 [Git] - Guide des Commandes
+# 🛠 Git - Guide des Commandes
 
 ## 📑 Table des matières
 - [Commande de retour en arrière](#commande-de-retour-en-arrière)
 - [Notes d'utilisation](#notes-d'utilisation)
 
-## [Commande de retour en arrière]
+## Commande de retour en arrière
 
-### [git reset]
+### git reset
 ```bash
 git reset              # Renvoie la HEAD à un précédent commit
 ```
@@ -21,7 +21,7 @@ git reset [commit hash]               # Retourne la HEAD au commit
 git reset [--hard] [commit hash]               # Retourne la HEAD au commit et supprime les modifications
 git reset [--keep] [commit hash]               # Retourne la HEAD au commit et garde les modifications
 ```
-### [git revert]
+### git revert
 ```bash
 git revert            # Crée un commit qui annule les modifications du commit spécifié
 ```
@@ -44,11 +44,10 @@ git revert [--abort]                # Annule un revert qui cause un conflit
 - | : choix entre plusieurs options
 
 ### Bonnes pratiques
-- [Conseil d'utilisation 1]
-- [Conseil d'utilisation 2]
-- [Conseil d'utilisation 3]
+- Privilégier git reset --soft pour garder les modifications au cas où.
+- Utiliser git status avant git reset --hard.
+- Utiliser git revert au lieu de git reset pour annuler un commit en conservant l'historique.
 
 ### Points de vigilance
-- [Avertissement 1]
-- [Avertissement 2]
-- [Avertissement 3]
+- git reset --hard supprime définitivement les modifications locales, il est irréversible sans sauvegarde
+- Un revert ne supprime pas un commit, il crée un nouveau commit, ce qui peut compliquer l'historique.
