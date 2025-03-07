@@ -5,7 +5,7 @@
 - [Gestion des dépôts](#gestion-des-dépôts)
 - [Gestion des issues](#gestion-des-issues)
 - [Gestion des pull requests](#gestion-des-pull-requests)
-- [Notes d'utilisation](#notes-dutilisation)
+- [Notes d'utilisation](#📝-notes-dutilisation)
 
 ## Gestion des dépôts
 

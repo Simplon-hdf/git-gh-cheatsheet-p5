@@ -4,11 +4,11 @@
 
 ## 📑 Table des matières
 
-- [Introduction](#introduction)
-- [Concepts clés](#concepts-clés)
-- [Avantages](#avantages)
-- [Dans la pratique](#dans-la-pratique)
-- [Pour aller plus loin](#pour-aller-plus-loin)
+- [Introduction](#🎯-introduction)
+- [Concepts clés](#💡-concepts-clés)
+- [Avantages](#⭐-avantages)
+- [Dans la pratique](#🛠-dans-la-pratique)
+- [Pour aller plus loin](#📚-pour-aller-plus-loin)
 
 ## 🎯 Introduction
 
