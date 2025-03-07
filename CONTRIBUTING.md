@@ -16,23 +16,24 @@ Afin de maintenir une bonne lisibilité et une traçabilité des changements, ve
 
 2. **Types de commits** :
    Pour mieux comprendre la nature du commit, utilisez un préfixe indiquant le type de modification. Exemple :
-   - `feat:` pour une nouvelle fonctionnalité.
-   - `fix:` pour une correction de bug.
-   - `docs:` pour des changements dans la documentation.
-   - `style:` pour des modifications de style (formatage, espacement, etc.).
-   - `refactor:` pour un refactoring de code.
-   - `test:` pour les modifications relatives aux tests.
-   - `chore:` pour des tâches diverses qui ne modifient pas le code (ex. : mise à jour de dépendances).
+
+   - `feat()` pour une nouvelle fonctionnalité.
+   - `fix()` pour une correction de bug.
+   - `docs()` pour des changements dans la documentation.
+   - `style()` pour des modifications de style (formatage, espacement, etc.).
+   - `refactor()` pour un refactoring de code.
+   - `test()` pour les modifications relatives aux tests.
+   - `chore()` pour des tâches diverses qui ne modifient pas le code (ex. : mise à jour de dépendances).
 
    **Exemples** :
-   - `feat: ajouter la section sur les commandes de base Git`
-   - `fix: corriger une faute d'orthographe dans la section Git clone`
-   - `docs: mettre à jour les exemples de commandes Git push`
-   - `style: améliorer la mise en page du fichier README`
-   - `refactor: organiser les sections du cheat sheet par thème`
-   - `chore: ajouter un template pour les nouvelles fiches Git`
-   - `docs: ajouter une section sur l'utilisation de GitHub CLI`
-   - `fix: corriger l'exemple de fusion dans la section Git merge`
+   - `feat(Ajouter la section sur les commandes de base Git)`
+   - `fix(Corriger une faute d'orthographe dans la section Git clone)`
+   - `docs(Mettre à jour les exemples de commandes Git push)`
+   - `style(Améliorer la mise en page du fichier README)`
+   - `refactor(Organiser les sections du cheat sheet par thème)`
+   - `chore(Ajouter un template pour les nouvelles fiches Git)`
+   - `docs(Ajouter une section sur l'utilisation de GitHub CLI)`
+   - `fix(Corriger l'exemple de fusion dans la section Git merge)`
 
 3. **Rédiger les messages en anglais** :
    Tous les messages de commit doivent être obligatoirement rédigés en anglais pour maintenir la cohérence du projet, y compris les noms de branches et les descriptions dans les PR.
