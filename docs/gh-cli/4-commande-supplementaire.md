@@ -159,4 +159,22 @@ gh secret list [options]           # Lister les secrets existants
 gh secret remove <nom> [options]   # Supprimer un secret
 
 ```
+### gh ssh-key
+```bash
+gh ssh-key                         # Gérer les clés SSH associées à votre compte GitHub
+
+
+```
+
+Options disponibles :
+
+```bash
+gh ssh-key add <fichier_clé> [options]    # Ajouter une nouvelle clé SSH à votre compte GitHub
+gh ssh-key list [options]                 # Lister les clés SSH actuellement associées à votre compte
+gh ssh-key delete <clé_id> [options]      # Supprimer une clé SSH de votre compte GitHub
+
+```
+
+
+
 
