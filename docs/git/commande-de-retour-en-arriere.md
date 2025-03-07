@@ -44,11 +44,10 @@ git revert [--abort]                # Annule un revert qui cause un conflit
 - | : choix entre plusieurs options
 
 ### Bonnes pratiques
-- Préviligié git reset --soft pour garder les modifications au cas où.
-- Utilisé git status avant git reset --hard.
+- Privilégier git reset --soft pour garder les modifications au cas où.
+- Utiliser git status avant git reset --hard.
 - Utiliser git revert au lieu de git reset pour annuler un commit en conservant l'historique.
 
 ### Points de vigilance
 - git reset --hard supprime définitivement les modifications locales, il est irréversible sans sauvegarde
 - Un revert ne supprime pas un commit, il crée un nouveau commit, ce qui peut compliquer l'historique.
-
