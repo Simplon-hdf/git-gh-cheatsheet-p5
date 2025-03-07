@@ -16,6 +16,7 @@ Afin de maintenir une bonne lisibilité et une traçabilité des changements, ve
 
 2. **Types de commits** :
    Pour mieux comprendre la nature du commit, utilisez un préfixe indiquant le type de modification. Exemple :
+
    - `feat()` pour une nouvelle fonctionnalité.
    - `fix()` pour une correction de bug.
    - `docs()` pour des changements dans la documentation.
