@@ -46,8 +46,8 @@ Options disponibles :
 ```bash
 git commit [-m] ["message"]              # Ajoute un message au commit
 git commit [-am] ["message"]              # Ajoute à la zone de staging et commit tous les fichiers qui ont des changements
-git commit [-amend] [-m] ["message"]            # Permet de modifier le message du dernier commit
-git commit [-amend] [--no-edit]            # modifier sans changer le message
+git commit [--amend] [-m] ["message"]            # Permet de modifier le message du dernier commit
+git commit [--amend] [--no-edit]            # modifier sans changer le message
 ```
 
 ## git status
@@ -60,8 +60,7 @@ Options disponibles :
 
 ```bash
 git status [-s] | [--short]             # Montre une version simplifié
-git status [---ignored]            # Montre les fichiers ignorés
-git status [-amend] [-m] <"message">            # Permet de modifier le dernier commit
+git status [--ignored]            # Montre les fichiers ignorés
 git status [-u] [no] | [all]            # Ne montre pas les fichiers non suivis | Voir tous les fichiers"
 ```
 
