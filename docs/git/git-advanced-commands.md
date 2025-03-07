@@ -27,3 +27,21 @@ git stash pop                      # Applique le dernier stash et le supprime de
 git stash drop stash@{n}           # Supprime un stash spécifique
 git stash clear                    # Supprime tous les stashs
 ```
+
+## Git diff
+
+### Analyser les différences
+```bash
+git diff                           # Affiche les modifications non indexées
+```
+
+Options disponibles :
+```bash
+git diff --staged                  # Affiche les modifications indexées (qui seront commises)
+git diff HEAD                      # Affiche toutes les modifications depuis le dernier commit
+git diff <commit1> <commit2>       # Affiche les différences entre deux commits
+git diff <branche1> <branche2>     # Affiche les différences entre deux branches
+git diff --stat                    # Affiche un résumé statistique des modifications
+```
+
+
