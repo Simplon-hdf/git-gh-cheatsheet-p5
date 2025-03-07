@@ -34,3 +34,18 @@ gh api [-X] [méthode] [endpoint]     # Spécifier la méthode HTTP à utiliser 
 gh api [--hostname] [nom_hôte] [endpoint]  # Spécifier l'hôte GitHub à utiliser (par défaut : github.com)
 
 ```
+
+### gh attestation
+```bash
+gh attestation                     # Gérer les attestations d'artefacts dans GitHub Actions
+
+```
+
+Options disponibles :
+```bash
+gh attestation [download] [artefact]  # Télécharger les attestations associées à un artefact
+gh attestation [verify] [artefact]    # Vérifier l'intégrité et l'authenticité d'un artefact
+gh attestation [trusted-root]         # Afficher le fichier `trusted_root.jsonl` pour une vérification hors ligne
+
+```
+
