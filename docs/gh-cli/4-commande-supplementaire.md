@@ -189,5 +189,20 @@ gh status [-o],| [--org] [organisation>]   # Limiter les résultats à une organ
 
 ```
 
+### gh variable
+
+```bash
+gh variable                        # Gérer les variables GitHub pour les workflows Actions
+```
+
+Options disponibles :
+
+```bash
+gh variable [set] [nom] <options>    # Créer ou mettre à jour une variable
+gh variable [list] <options>         # Lister les variables existantes
+gh variable [delete] [nom] <options> # Supprimer une variable
+
+```
+
 
 
