@@ -1,10 +1,3 @@
-<style>
-summary {
-  font-size: 20px;
-  font-weight: bold;
-}
-</style>
-
 # Cheat sheet Git et GitHub CLI
 
 ## 📝 Description
