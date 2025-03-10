@@ -190,4 +190,4 @@ ssh-keygen -t rsa -b 4096 -C "votre@email.com"
 
 ---
 
-_Dernière mise à jour : 6 mars 2024_
+_Dernière mise à jour : 10 mars 2024_
