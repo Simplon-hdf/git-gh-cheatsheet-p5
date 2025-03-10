@@ -167,36 +167,36 @@ git checkout <nom_tag>             # Se positionne sur l'état du code au moment
 ## Notes d'utilisation
 
 ### ⌨️ Format des commandes
-- [paramètre] : paramètre obligatoire
-- <paramètre> : paramètre optionnel
-- {n} : indique un numéro ou un identifiant
+- [paramètre] : paramètre obligatoire.
+- <paramètre> : paramètre optionnel.
+- {n} : indique un numéro ou un identifiant.
 
 ### ✅ Bonnes pratiques
-- Utilisez `git stash` pour mettre de côté des modifications temporaires sans créer de commit
-- Préférez `git rebase -i` pour nettoyer votre historique avant de partager vos changements
-- Créez des tags pour marquer les versions importantes du projet
-- Utilisez `git bisect` pour trouver rapidement à quel commit un bug a été introduit
-- Appliquez `git cherry-pick` avec parcimonie et préférez les merges ou rebases quand c'est possible
+- Utilisez `git stash` pour mettre de côté des modifications temporaires sans créer de commit.
+- Préférez `git rebase -i` pour nettoyer votre historique avant de partager vos changements.
+- Créez des tags pour marquer les versions importantes du projet.
+- Utilisez `git bisect` pour trouver rapidement à quel commit un bug a été introduit.
+- Appliquez `git cherry-pick` avec parcimonie et préférez les merges ou rebases quand c'est possible.
 
 ### ⚠️ Points de vigilance
-- Ne réécrivez jamais l'historique des branches partagées avec `git rebase`
-- Faites attention avec `git cherry-pick` qui peut créer des doublons de commits
-- N'utilisez pas `git push --force` après avoir modifié des tags
-- Vérifiez toujours l'état de votre dépôt avant d'utiliser des commandes destructives
+- Ne réécrivez jamais l'historique des branches partagées avec `git rebase`.
+- Faites attention avec `git cherry-pick` qui peut créer des doublons de commits.
+- N'utilisez pas `git push --force` après avoir modifié des tags.
+- Vérifiez toujours l'état de votre dépôt avant d'utiliser des commandes destructives.
 
 ## Pour aller plus loin
 
 ### 📚 Documentation officielle
-- [git stash](https://git-scm.com/docs/git-stash) - Documentation complète de git stash
-- [git diff](https://git-scm.com/docs/git-diff) - Documentation complète de git diff
-- [git bisect](https://git-scm.com/docs/git-bisect) - Documentation complète de git bisect
-- [git blame](https://git-scm.com/docs/git-blame) - Documentation complète de git blame
-- [git grep](https://git-scm.com/docs/git-grep) - Documentation complète de git grep
-- [git cherry-pick](https://git-scm.com/docs/git-cherry-pick) - Documentation complète de git cherry-pick
-- [git rebase](https://git-scm.com/docs/git-rebase) - Documentation complète de git rebase
-- [git tag](https://git-scm.com/docs/git-tag) - Documentation complète de git tag
+- [git stash](https://git-scm.com/docs/git-stash) - Documentation complète de git stash.
+- [git diff](https://git-scm.com/docs/git-diff) - Documentation complète de git diff.
+- [git bisect](https://git-scm.com/docs/git-bisect) - Documentation complète de git bisect.
+- [git blame](https://git-scm.com/docs/git-blame) - Documentation complète de git blame.
+- [git grep](https://git-scm.com/docs/git-grep) - Documentation complète de git grep.
+- [git cherry-pick](https://git-scm.com/docs/git-cherry-pick) - Documentation complète de git. cherry-pick
+- [git rebase](https://git-scm.com/docs/git-rebase) - Documentation complète de git rebase.
+- [git tag](https://git-scm.com/docs/git-tag) - Documentation complète de git tag.
 
 ### 🎓 Ressources d'apprentissage
-- [Git Book - Commandes avancées](https://git-scm.com/book/fr/v2) - Chapitre sur les commandes avancées
-- [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials) - Tutoriels détaillés sur Git
-- [Git Explorer](https://gitexplorer.com/) - Outil interactif pour explorer les commandes Git
+- [Git Book - Commandes avancées](https://git-scm.com/book/fr/v2) - Chapitre sur les commandes avancées.
+- [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials) - Tutoriels détaillés sur Git.
+- [Git Explorer](https://gitexplorer.com/) - Outil interactif pour explorer les commandes Git.

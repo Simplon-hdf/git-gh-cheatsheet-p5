@@ -17,7 +17,7 @@ Ce guide s'adresse aux développeurs souhaitant optimiser leur flux de travail a
 
 ## Concepts clés
 ### 💻 GH CLI
-- Interface en ligne de commande
+- Interface en ligne de commande.
 - Permet de gérer des dépôts, issues, pull requests, workflows GitHub Actions.
 - Fonctionne sur Windows, macOS et Linux.
 
@@ -34,7 +34,7 @@ Ce guide s'adresse aux développeurs souhaitant optimiser leur flux de travail a
 - Gestion des pull requests sans ouvrir l'interface web.
 
 ### ⚙️ Workflows GitHub Actions
-- Lancement et suivi des actions **GitHub** pour automatiser des tâches de déploiement ou de tests
+- Lancement et suivi des actions **GitHub** pour automatiser des tâches de déploiement ou de tests.
 - Gestion des workflows sans passer par l'interface web.
 
 ## Avantages
