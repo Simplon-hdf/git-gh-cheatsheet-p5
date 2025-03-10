@@ -12,22 +12,22 @@
 ### 💻 Configuration système requise
 
 #### 🪟 Windows
-- Windows 7 ou version ultérieure (64 bits)
-- 2 GB RAM minimum
-- 190 MB d'espace disque
-- Droits administrateur Windows
+- Windows 7 ou version ultérieure (64 bits).
+- 2 GB RAM minimum.
+- 190 MB d'espace disque.
+- Droits administrateur Windows.
 
 #### 🍎 macOS
-- macOS 10.13 (High Sierra) ou version ultérieure
-- 2 GB RAM minimum
-- 190 MB d'espace disque
-- Accès Terminal avec droits sudo
+- macOS 10.13 (High Sierra) ou version ultérieure.
+- 2 GB RAM minimum.
+- 190 MB d'espace disque.
+- Accès Terminal avec droits sudo.
 
 #### 🐧 Linux
-- Toute distribution Linux moderne
-- 2 GB RAM minimum
-- 190 MB d'espace disque
-- Accès Terminal avec droits sudo
+- Toute distribution Linux moderne.
+- 2 GB RAM minimum.
+- 190 MB d'espace disque.
+- Accès Terminal avec droits sudo.
 
 ### 🔧 Préparation
 
@@ -99,7 +99,7 @@ git config --global user.name "Votre Nom"
 git config --global user.email "votre@email.com"
 
 # Configurer l'éditeur par défaut
-git config --global core.editor "nano"  # ou vim, code, etc.
+git config --global core.editor "nano"  # ou vim, code, etc
 ```
 
 ### 🛠️ Configuration avancée
@@ -151,7 +151,7 @@ color.ui=auto
 ### ⚠️ Problèmes courants
 
 #### 🚫 Erreur "git n'est pas reconnu comme commande interne" (Windows)
-**Symptôme :** La commande git n'est pas reconnue dans le terminal
+**Symptôme :** La commande git n'est pas reconnue dans le terminal.
 **Solution :**
 ```bash
 # Réinstaller Git en cochant l'option "Git from the command line and also from 3rd-party software"
@@ -159,14 +159,14 @@ color.ui=auto
 ```
 
 #### 🔒 Erreur de certificat SSL
-**Symptôme :** Erreur SSL certificate problem
+**Symptôme :** Erreur SSL certificate problem.
 **Solution :**
 ```bash
 git config --global http.sslVerify false  # À utiliser avec précaution
 ```
 
 #### 🔑 Erreur d'authentification
-**Symptôme :** Permission denied (publickey)
+**Symptôme :** Permission denied (publickey).
 **Solution :**
 ```bash
 # Vérifier la clé SSH
