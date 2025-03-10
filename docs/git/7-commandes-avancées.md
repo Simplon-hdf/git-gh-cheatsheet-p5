@@ -1,31 +1,16 @@
 # Git - Guide des Branches
 
 ## Table des matières
-- [Git - Guide des Branches](#git---guide-des-branches)
-  - [Table des matières](#table-des-matières)
+
   - [Introduction aux branches](#introduction-aux-branches)
-    - [🌿 Concept de branche](#-concept-de-branche)
   - [Créer et basculer entre les branches](#créer-et-basculer-entre-les-branches)
-    - [🔨 Création d'une branche](#-création-dune-branche)
-    - [🔄 Basculer entre branches](#-basculer-entre-branches)
   - [Fusionner des branches](#fusionner-des-branches)
-    - [🔗 Merge](#-merge)
-    - [🔄 Rebase](#-rebase)
   - [Gérer les conflits de merge](#gérer-les-conflits-de-merge)
-    - [🔍 Résolution de conflits](#-résolution-de-conflits)
   - [Envoyer des modifications vers un dépôt distant](#envoyer-des-modifications-vers-un-dépôt-distant)
-    - [⬆️ Push](#️-push)
   - [Récupérer les modifications d'un dépôt distant](#récupérer-les-modifications-dun-dépôt-distant)
-    - [⬇️ Pull](#️-pull)
   - [Travailler avec des forks et des pull requests](#travailler-avec-des-forks-et-des-pull-requests)
-    - [🔄 Gestion des forks](#-gestion-des-forks)
   - [Notes d'utilisation](#notes-dutilisation)
-    - [⌨️ Format des commandes](#️-format-des-commandes)
-    - [✅ Bonnes pratiques](#-bonnes-pratiques)
-    - [⚠️ Points de vigilance](#️-points-de-vigilance)
   - [Pour aller plus loin](#pour-aller-plus-loin)
-    - [📚 Documentation des commandes](#-documentation-des-commandes)
-    - [🎓 Ressources d'apprentissage](#-ressources-dapprentissage)
 
 ## Introduction aux branches
 
