@@ -78,7 +78,7 @@ gh pr list --label "[étiquette]" # Filtrer par étiquette
 
 ## Notes d'utilisation
 ### 📝 Format des commandes
-- [paramètre] : paramètre obligatoire
+- [paramètre] : paramètre obligatoire.
 
 
 ### ✨ Bonnes pratiques
