@@ -6,6 +6,7 @@
 - [Configuration](#configuration)
 - [Vérification](#vérification)
 - [Résolution des problèmes](#résolution-des-problèmes)
+- [Pour aller plus loin](#pour-aller-plus-loin)
 
 ## Prérequis
 ### 💻 Configuration système requise
