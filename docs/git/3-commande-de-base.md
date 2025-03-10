@@ -50,7 +50,7 @@ git commit [--amend] [-m] ["message"]            # Permet de modifier le message
 git commit [--amend] [--no-edit]            # modifier sans changer le message
 ```
 
-## git status
+### git status
 
 ```bash
 git status              # Permet de montré quel fichier dans la zone de staging
@@ -80,6 +80,21 @@ git log [--since="YYYY-MM-DD"]   # Affiche les commits depuis une date donnée
 git log [--grep="fix"]           # Recherche des commits contenant un mot-clé dans le message
 git log [-p]                     # Affiche les différences (patch) pour chaque commit
 git log [--stat]                 # Affiche un résumé des fichiers modifiés
+```
+
+### git checkout
+
+```bash
+git checkout [commit]              # Retourne à un commit spécifique
+```
+
+Options disponibles :
+
+```bash
+git checkout -b [branche]          # Crée une nouvelle branche et bascule dessus
+git checkout -b [branche] [commit]  # Crée une nouvelle branche à partir d'un commit spécifique
+git checkout -f [branche]           # Force le changement de branche
+git checkout [branche] -- [fichier] # Remplace un fichier dans la branche actuelle par celui d'une autre branche
 ```
 
 ## 📝 Notes d'utilisation
