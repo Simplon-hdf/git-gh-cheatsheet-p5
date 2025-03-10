@@ -92,13 +92,12 @@ gh pr list --label "[étiquette]" # Filtrer par étiquette
 - Ne partagez jamais vos tokens d'accès ou vos informations sensibles.
 
 ## Pour aller plus loin
-### 📚 Ressources supplémentaires
-**### Documentation officielle**
+### 📚 Documentation officielle
 - [Documentation GitHub CLI](https://cli.github.com/manual/)
 - [Guide de démarrage rapide](https://docs.github.com/en/github-cli/github-cli/quickstart)
 - [FAQ GitHub CLI](https://cli.github.com/manual/gh_help_reference)
 
-**### Communauté**
+### 👥 Communauté
 - [GitHub Community Forum](https://github.community/)
 - [Stack Overflow [github-cli]](https://stackoverflow.com/questions/tagged/github-cli)
 - [GitHub Discussions](https://github.com/cli/cli/discussions)
