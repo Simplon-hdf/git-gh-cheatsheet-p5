@@ -54,7 +54,7 @@ git revert [--abort] # Annule un revert qui cause un conflit
 
 ## Pour aller plus loin
 
-### 📚 Documentation des commandes
+### 📚 Documentation officielle
 - [git reset](https://git-scm.com/docs/git-reset) - Documentation complète de git reset
 - [git revert](https://git-scm.com/docs/git-revert) - Documentation complète de git revert
 

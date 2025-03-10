@@ -148,7 +148,7 @@ git pull upstream main             # Récupère les modifications de la branche 
 
 ## Pour aller plus loin
 
-### 📚 Documentation des commandes
+### 📚 Documentation officielle
 - [git branch](https://git-scm.com/docs/git-branch) - Documentation complète de git branch
 - [git checkout](https://git-scm.com/docs/git-checkout) - Documentation complète de git checkout
 - [git switch](https://git-scm.com/docs/git-switch) - Documentation complète de git switch
