@@ -41,7 +41,7 @@ Ce guide a pour objectif de fournir une vue d'ensemble sur l'utilisation de **Gi
 </details>
 <br>
 <details>
-  <summary>❓ But du projet</summary>
+  <summary><strong>❓ But du projet</strong></summary>
 
 Ce projet a pour objectif de fournir une **vue d'ensemble complète** des outils **Git** et **GitHub CLI**.
 Il regroupe les principales commandes et fonctionnalités de **Git** et **GitHub** en un seul endroit,
@@ -54,7 +54,7 @@ afin de maîtriser les outils de versionnement et de gestion de projet.
 </details>
 <br>
 <details> 
-<summary> ⚙️ Built with</summary>
+<summary> <strong>⚙️ Built with</strong></summary>
 
 <ul>
 <li>
@@ -77,7 +77,7 @@ afin de maîtriser les outils de versionnement et de gestion de projet.
 
 <br>
 <details>
-  <summary>🧑‍🔧 Vous voulez contribuer au projet ?</summary>
+  <summary><strong>🧑‍🔧 Vous voulez contribuer au projet ?</strong></summary>
 
 Vous devez suivre plusieurs étapes pour y participer :
 
@@ -109,7 +109,7 @@ Vous devez suivre plusieurs étapes pour y participer :
 
 <br>
 <details>
-  <summary>🧑‍💻 Crédits</summary>
+  <summary><strong>🧑‍💻 Crédits</strong></summary>
 
 Merci aux personnes qui ont contribué à ce projet !
 
