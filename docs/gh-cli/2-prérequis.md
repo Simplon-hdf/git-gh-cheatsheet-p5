@@ -10,9 +10,9 @@
 
 ## Prérequis
 ### 💻 Configuration système requise
-- Version OS : Windows 10+, macOS 10.15+, ou Linux
-- Espace disque : Minimum 100 MB
-- Dépendances : Git doit être installé sur votre système
+- Version OS : Windows 10+, macOS 10.15+, ou Linux.
+- Espace disque : Minimum 100 MB.
+- Dépendances : Git doit être installé sur votre système.
 
 ### 🔧 Préparation
 ```bash
@@ -87,7 +87,7 @@ Logged in to github.com as VotreUsername
 ## Résolution des problèmes
 ### ⚠️ Problèmes courants
 #### 🚫 Erreur d'authentification
-**Symptôme :** "error logging into github.com: authentication failed"
+**Symptôme :** "error logging into github.com: authentication failed".
 **Solution :**
 ```bash
 # Réinitialiser l'authentification
@@ -96,7 +96,7 @@ gh auth login
 ```
 
 #### 🌐 Problème de proxy
-**Symptôme :** "dial tcp: lookup api.github.com: no such host"
+**Symptôme :** "dial tcp: lookup api.github.com: no such host".
 **Solution :**
 ```bash
 # Configurer le proxy
@@ -116,4 +116,4 @@ export HTTP_PROXY=http://proxy.example.com:8080
 - [GitHub Discussions](https://github.com/cli/cli/discussions)
 
 ---
-*Dernière mise à jour : 7 mars 2025*
+*Dernière mise à jour : 10 mars 2025*
