@@ -104,7 +104,7 @@ export HTTPS_PROXY=http://proxy.example.com:8080
 export HTTP_PROXY=http://proxy.example.com:8080
 ```
 
-## Ressources supplémentaires
+## Pour aller plus loin
 ### 📚 Documentation officielle
 - [Documentation GitHub CLI](https://cli.github.com/manual/)
 - [Guide de démarrage rapide](https://docs.github.com/en/github-cli/github-cli/quickstart)
