@@ -50,10 +50,10 @@ Ce guide s'adresse aux débutants qui souhaitent comprendre les bases de Git et 
 **Git** est un logiciel que l'on installe sur son ordinateur pour gérer les versions du code. Il fonctionne principalement en ligne de commande (CLI), bien que des interfaces graphiques existent pour simplifier son utilisation.
 
 Avec **Git**, on peut :
-- **Enregistrer** son code et ses modifications dans des commits
+- **Enregistrer** son code et ses modifications dans des commits.
 - **Travailler à plusieurs** grâce aux branches et aux merges, sans écraser le travail des autres.
 - **Revenir en arrière** en cas de problème grâce à l'historique des commits.
-- **Partager et synchroniser** son code sur un serveur distant comme **GitHub**, **GitLab** ou **Bitbucket**
+- **Partager et synchroniser** son code sur un serveur distant comme **GitHub**, **GitLab** ou **Bitbucket**.
 
 ## Pour aller plus loin
 ### 📚 Documentation officielle
