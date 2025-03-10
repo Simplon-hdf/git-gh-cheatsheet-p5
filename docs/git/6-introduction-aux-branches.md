@@ -186,7 +186,7 @@ git checkout <nom_tag>             # Se positionne sur l'état du code au moment
 
 ## Pour aller plus loin
 
-### 📚 Documentation des commandes
+### 📚 Documentation officielle
 - [git stash](https://git-scm.com/docs/git-stash) - Documentation complète de git stash
 - [git diff](https://git-scm.com/docs/git-diff) - Documentation complète de git diff
 - [git bisect](https://git-scm.com/docs/git-bisect) - Documentation complète de git bisect
