@@ -8,7 +8,7 @@
 - [Pour aller plus loin](#pour-aller-plus-loin)
 
 ## Gestion des dépôts
-### 📥 Clôner un dépôt
+### 📥 Cloner un dépôt
 ```bash
 gh repo clone [utilisateur]/[dépôt] # Clone un dépôt GitHub localement sur l'ordinateur
 ```
