@@ -1,8 +1,7 @@
 # GitHub CLI - Commandes Supplémentaires
 
 ## Table des matières
-- [GitHub CLI - Commandes Supplémentaires](#github-cli---commandes-supplémentaires)
-  - [Table des matières](#table-des-matières)
+
   - [Configuration et personnalisation](#configuration-et-personnalisation)
   - [Gestion des authentifications](#gestion-des-authentifications)
   - [Interaction avec l'API](#interaction-avec-lapi)
