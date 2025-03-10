@@ -76,6 +76,23 @@ git bisect reset                   # Termine la session de bisect et restaure l'
 git bisect run <test_script>       # Exécute un script pour automatiser la recherche
 ```
 
+## 🧐 Git blame
+
+### Savoir qui a écrit chaque ligne
+
+```bash
+git blame [fichier]                # Affiche les auteurs des lignes d'un fichier et leur dernier commit
+```
+
+Options disponibles :
+
+```bash
+git blame -L [start],[end] [fichier] # Affiche les lignes indiquées
+git blame -e [fichier]               # Affiche les informations de l'auteur avec l'email complet
+git blame -f [fichier]               # Affiche le nom du fichier avant qu'il ne soit renommé
+git blame -M [fichier]               # Détecte les changements de lignes dans les fichiers
+```
+
 ## 🍒 Git cherry-pick
 
 ### Appliquer des commits spécifiques
