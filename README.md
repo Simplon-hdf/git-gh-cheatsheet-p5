@@ -43,10 +43,10 @@ Ce guide a pour objectif de fournir une vue d'ensemble sur l'utilisation de **Gi
 <details>
   <summary><strong>❓ But du projet</strong></summary>
 <br>
-Ce projet a pour objectif de fournir une **vue d'ensemble complète** des outils **Git** et **GitHub CLI**.
-Il regroupe les principales commandes et fonctionnalités de **Git** et **GitHub** en un seul endroit,
+Ce projet a pour objectif de fournir une <strong>vue d'ensemble complète</strong> des outils <strong>Git</strong> et <strong>GitHub CLI</strong>.
+Il regroupe les principales commandes et fonctionnalités de <strong>Git</strong> et <strong>GitHub</strong> en un seul endroit,
 permettant ainsi de gérer efficacement le code source, de collaborer avec d'autres développeurs et
-d'automatiser les interactions avec **GitHub** en ligne de commande.
+d'automatiser les interactions avec <strong>GitHub</strong> en ligne de commande.
 
 Ce guide est conçu pour être utilisé aussi bien par les développeurs débutants que par les utilisateurs plus expérimentés,
 afin de maîtriser les outils de versionnement et de gestion de projet.
@@ -78,9 +78,13 @@ afin de maîtriser les outils de versionnement et de gestion de projet.
 <br>
 <details>
   <summary><strong>🧑‍🔧 Vous voulez contribuer au projet ?</strong></summary>
-<br>
-Vous devez suivre plusieurs étapes pour y participer :
-
+  <br>
+  Vous devez suivre plusieurs étapes pour y participer :
+  <br>
+  <br>
+  La première étape importante est de se référer au guide de contribution disponible <a href="https://github.com/Simplon-hdf/git-gh-cheatsheet-p5/blob/develop/CONTRIBUTING.md">ici</a>.
+  <br>
+  <br>
   <ul>
     <li><strong>Forkez le dépôt :</strong> Créez une copie du projet sur votre propre compte GitHub.</li>
   </ul>
@@ -92,18 +96,18 @@ Vous devez suivre plusieurs étapes pour y participer :
   <pre><code>git clone https://github.com/VOTRE_UTILISATEUR/git-gh-cheatsheet-p5.git</code></pre>
 
   <ul>
-    <li><strong>Après l'ouverture du dossier dans votre IDE, créez une nouvelle branche à partir de <em>develop</em> :</strong> Assurez-vous d'être sur la branche <em>develop</em> avant de créer une nouvelle branche pour votre fonctionnalité.</li>
+    <li><strong>Créez une nouvelle branche à partir de <em>develop</em> :</strong> Avant de commencer à travailler sur une nouvelle fonctionnalité, assurez-vous d'être sur la branche <em>develop</em>.</li>
   </ul>
   <pre><code>git switch develop</code></pre>
   <pre><code>git checkout -b ma-nouvelle-fonctionnalite</code></pre>
 
   <ul>
-    <li><strong>Une fois votre fonctionnalité terminée, faites un commit et poussez vos changements :</strong></li>
+    <li><strong>Une fois votre fonctionnalité terminée, effectuez un commit et poussez vos changements :</strong></li>
   </ul>
   <pre><code>git push origin ma-nouvelle-fonctionnalite</code></pre>
 
   <ul>
-    <li><strong>Enfin, ouvrez une pull request vers la branche <em>develop</em> du projet principal :</strong> Nous répondrons à votre PR dès que possible ! 📥</li>
+    <li><strong>Enfin, ouvrez une pull request vers la branche <em>develop</em> du projet principal :</strong> Nous examinerons votre PR dès que possible ! 📥</li>
   </ul>
 </details>
 
