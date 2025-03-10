@@ -56,6 +56,6 @@ Avec **Git**, on peut :
 - **Partager et synchroniser** son code sur un serveur distant comme **GitHub**, **GitLab** ou **Bitbucket**
 
 ## Pour aller plus loin
-### 📚 Ressources utiles
+### 📚 Documentation officielle
 - [Documentation Git](https://git-scm.com/docs)
 - [Documentation GitHub](https://docs.github.com/fr)

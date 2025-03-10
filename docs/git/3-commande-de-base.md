@@ -103,7 +103,7 @@ git checkout [branche] -- [fichier] # Remplace un fichier dans la branche actuel
 
 ## Pour aller plus loin
 
-### 📚 Documentation des commandes
+### 📚 Documentation officielle
 - [git init](https://git-scm.com/docs/git-init) - Documentation complète de git init
 - [git add](https://git-scm.com/docs/git-add) - Documentation complète de git add
 - [git commit](https://git-scm.com/docs/git-commit) - Documentation complète de git commit
