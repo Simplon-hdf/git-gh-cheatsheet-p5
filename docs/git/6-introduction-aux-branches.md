@@ -1,167 +1,131 @@
-# Git - Commandes Avancées
+# Git - Guide des Branches
 
 ## Table des matières
-- [Git Stash](#git-stash)
-- [Git Diff](#git-diff)
-- [Git Bisect](#git-bisect)
-- [Git Blame](#git-blame)
-- [Git Grep](#git-grep)
-- [Git Cherry-Pick](#git-cherry-pick)
-- [Git Rebase](#git-rebase)
-- [Git Tag](#git-tag)
-- [Notes d'utilisation](#notes-dutilisation)
-- [Pour aller plus loin](#pour-aller-plus-loin)
 
-## Git Stash
+  - [Introduction aux branches](#introduction-aux-branches)
+  - [Créer et basculer entre les branches](#créer-et-basculer-entre-les-branches)
+  - [Fusionner des branches](#fusionner-des-branches)
+  - [Gérer les conflits de merge](#gérer-les-conflits-de-merge)
+  - [Envoyer des modifications vers un dépôt distant](#envoyer-des-modifications-vers-un-dépôt-distant)
+  - [Récupérer les modifications d'un dépôt distant](#récupérer-les-modifications-dun-dépôt-distant)
+  - [Travailler avec des forks et des pull requests](#travailler-avec-des-forks-et-des-pull-requests)
+  - [Notes d'utilisation](#notes-dutilisation)
+  - [Pour aller plus loin](#pour-aller-plus-loin)
 
-### 📦 Sauvegarder des modifications temporaires
+## Introduction aux branches
+
+### 🌿 Concept de branche
 ```bash
-git stash                          # Stocke les modifications locales dans une réserve temporaire
+git branch                          # Affiche toutes les branches locales
+```
+
+Git permet de gérer les branches pour travailler sur plusieurs fonctionnalités ou correctifs en parallèle. Chaque branche est un environnement indépendant où les développeurs peuvent effectuer des modifications sans perturber le travail des autres. La branche principale est souvent appelée main ou master, mais des branches spécifiques peuvent être créées pour développer de nouvelles fonctionnalités, corriger des bugs ou expérimenter.
+
+## Créer et basculer entre les branches
+
+### 🔨 Création d'une branche
+```bash
+git branch <nom_branche>           # Crée une nouvelle branche sans y basculer
 ```
 
 Options disponibles :
 ```bash
-git stash save "message"           # Stocke les modifications avec un message descriptif
-git stash -p                       # Mode interactif pour choisir quels changements stocker
-git stash --include-untracked      # Inclut également les fichiers non suivis
+git branch -v                      # Affiche les branches locales avec le dernier commit sur chaque branche
+git branch --merged                # Affiche les branches qui ont été fusionnées dans la branche courante
+git branch --no-merged             # Affiche les branches qui n'ont pas été fusionnées dans la branche courante
 ```
 
-### 📋 Gérer les stashs
+### 🔄 Basculer entre branches
 ```bash
-git stash list                     # Affiche la liste des stashs enregistrés
-```
-
-Options disponibles :
-```bash
-git stash show stash@{n}           # Affiche les modifications contenues dans le stash spécifié
-git stash apply stash@{n}          # Applique un stash spécifique sans le supprimer
-git stash pop                      # Applique le dernier stash et le supprime de la liste
-git stash drop stash@{n}           # Supprime un stash spécifique
-git stash clear                    # Supprime tous les stashs
-```
-
-## Git Diff
-
-### 🔍 Analyser les différences
-```bash
-git diff                           # Affiche les modifications non indexées
+git checkout <nom_branche>         # Change la branche courante pour nom_branche
 ```
 
 Options disponibles :
 ```bash
-git diff --staged                  # Affiche les modifications indexées (qui seront commises)
-git diff HEAD                      # Affiche toutes les modifications depuis le dernier commit
-git diff <commit1> <commit2>       # Affiche les différences entre deux commits
-git diff <branche1> <branche2>     # Affiche les différences entre deux branches
-git diff --stat                    # Affiche un résumé statistique des modifications
+git checkout -b <nom_branche>      # Crée une nouvelle branche nommée nom_branche et se déplace dessus
+git switch <nom_branche>           # Change la branche courante pour nom_branche (équivalent à git checkout <nom_branche>)
+git switch -c <nom_branche>        # Crée une nouvelle branche nommée nom_branche et se déplace dessus (équivalent à git checkout -b <nom_branche>)
 ```
 
-## Git Bisect
+## Fusionner des branches
 
-### 🔎 Déboguer avec la recherche binaire
+### 🔗 Merge
 ```bash
-git bisect start                   # Démarre une session de recherche binaire
-```
-
-Options disponibles :
-```bash
-git bisect bad                     # Marque le commit actuel comme "mauvais" (contient le bug)
-git bisect good <commit>           # Marque un commit comme "bon" (sans le bug)
-git bisect skip                    # Ignore le commit actuel et passe au suivant
-git bisect reset                   # Termine la session de bisect et restaure l'état initial
-git bisect run <test_script>       # Exécute un script pour automatiser la recherche
-```
-
-## Git Blame
-
-### 👤 Savoir qui a écrit chaque ligne
-```bash
-git blame [fichier]                # Affiche les auteurs des lignes d'un fichier et leur dernier commit
+git merge <branche_source>         # Fusionne la branche branche_source dans la branche courante
 ```
 
 Options disponibles :
 ```bash
-git blame -L [start],[end] [fichier] # Affiche les lignes indiquées
-git blame -e [fichier]               # Affiche les informations de l'auteur avec l'email complet
-git blame -f [fichier]               # Affiche le nom du fichier avant qu'il ne soit renommé
-git blame -M [fichier]               # Détecte les changements de lignes dans les fichiers
+git merge --no-ff <branche>        # Fusionne la branche dans la branche courante en créant un commit de fusion, même en cas de fast-forward
+git merge --abort                  # Annule un merge en cours et revient à l'état avant le début du merge
 ```
 
-## Git Grep
-
-### 🔍 Trouver un mot ou une phrase
+### 🔄 Rebase
 ```bash
-git grep [motif]                   # Recherche un motif dans les fichiers
+git rebase <branche_source>        # Rebase la branche courante sur la branche branche_source
 ```
 
 Options disponibles :
 ```bash
-git grep -i [motif]                # Recherche sans tenir compte de la casse
-git grep -l [motif]                # Affiche seulement les noms de fichiers contenant le motif
-git grep -n [motif]                # Affiche les lignes et numéros de ligne où le motif est trouvé
-git grep -v [motif]                # Exclut les lignes contenant le motif et les affiche
-git grep -w [motif]                # Recherche le motif en tant que mot entier
-git grep -e [motif]                # Permet de chercher un motif qui commence par "-"
-```
-
-## Git Cherry-Pick
-
-### 🍒 Appliquer des commits spécifiques
-```bash
-git cherry-pick <commit>           # Applique les modifications d'un commit sur la branche actuelle
-```
-
-Options disponibles :
-```bash
-git cherry-pick <commit1> <commit2> # Applique plusieurs commits en séquence
-git cherry-pick -n <commit>        # Applique les modifications sans créer de commit
-git cherry-pick --continue         # Continue cherry-pick après résolution de conflits
-git cherry-pick --abort            # Annule l'opération cherry-pick en cours
-git cherry-pick --quit             # Quitte l'opération cherry-pick en conservant les modifications
-```
-
-## Git Rebase
-
-### 🔄 Réécriture de l'historique
-```bash
-git rebase <branche_base>          # Réapplique les commits de la branche actuelle sur une autre branche
-```
-
-Options disponibles :
-```bash
-git rebase -i HEAD~<n>             # Rebase interactif pour modifier les n derniers commits
-git rebase --onto <nouvelle_base> <ancienne_base> <branche> # Déplace une série de commits vers une nouvelle base
 git rebase --continue              # Continue un rebase après résolution de conflits
-git rebase --abort                 # Annule un rebase en cours
-git rebase --skip                  # Ignore le commit actuel et passe au suivant
+git rebase --abort                 # Annule un rebase en cours et revient à l'état avant le début du rebase
+git rebase -i HEAD~<n>             # Lance un rebase interactif sur les n derniers commits à partir de HEAD
 ```
 
-## Git Tag
+## Gérer les conflits de merge
 
-### 🏷️ Gestion des versions et étiquettes
+### 🔍 Résolution de conflits
 ```bash
-git tag                            # Liste tous les tags existants
-```
-
-Options disponibles :
-```bash
-git tag <nom_tag>                  # Crée un tag léger sur le commit actuel
-git tag -a <nom_tag> -m "message"  # Crée un tag annoté avec un message
-git tag -l "pattern"               # Liste les tags correspondant au pattern
-git show <nom_tag>                 # Affiche les informations sur un tag spécifique
-```
-
-### 📤 Partager et gérer les tags
-```bash
-git push origin <nom_tag>          # Envoie un tag spécifique vers le dépôt distant
+git status                         # Affiche l'état actuel de l'arbre de travail et de l'index (fichiers modifiés, en attente de commit, etc.)
 ```
 
 Options disponibles :
 ```bash
-git push origin --tags             # Envoie tous les tags vers le dépôt distant
-git tag -d <nom_tag>               # Supprime un tag local
-git push origin :refs/tags/<nom_tag> # Supprime un tag distant
-git checkout <nom_tag>             # Se positionne sur l'état du code au moment du tag
+git add <fichiers_conflits>        # Ajoute les fichiers spécifiés à l'index après résolution des conflits
+git commit                         # Termine la fusion après résolution des conflits / Enregistre les modifications de l'index dans l'historique des commits
+git mergetool                      # Ouvre un outil de fusion graphique pour aider à résoudre les conflits
+```
+
+## Envoyer des modifications vers un dépôt distant
+
+### ⬆️ Push
+```bash
+git push origin <nom_branche>      # Envoie la branche locale vers le dépôt distant
+```
+
+Options disponibles :
+```bash
+git push --all origin              # Pousse toutes les branches locales vers le dépôt distant origin
+git push --force                   # Force la mise à jour du dépôt distant avec les modifications locales, même si cela écrase les modifications distantes
+git push -u origin <branche>       # Pousse la branche locale branche vers origin et la définit comme la branche de suivi par défaut
+```
+
+## Récupérer les modifications d'un dépôt distant
+
+### ⬇️ Pull
+```bash
+git pull                           # Récupère les modifications du dépôt distant et les fusionne dans la branche locale courante
+```
+
+Options disponibles :
+```bash
+git pull --rebase                  # Récupère les modifications du dépôt distant et les applique sur la branche locale courante via un rebase
+git fetch                          # Télécharge les objets et les références depuis un autre dépôt
+git fetch --all                    # Télécharge les objets et les références depuis tous les dépôts distants configurés
+```
+
+## Travailler avec des forks et des pull requests
+
+### 🔄 Gestion des forks
+```bash
+git remote add upstream <url>      # Ajoute un dépôt distant nommé upstream avec l'URL spécifiée
+```
+
+Options disponibles :
+```bash
+git fetch upstream                 # Télécharge les objets et les références depuis le dépôt distant upstream
+git merge upstream/main            # Fusionne la branche main du dépôt distant upstream dans la branche locale courante
+git pull upstream main             # Récupère les modifications de la branche main du dépôt distant upstream et les fusionne dans la branche locale courante
 ```
 
 ## Notes d'utilisation
@@ -169,34 +133,30 @@ git checkout <nom_tag>             # Se positionne sur l'état du code au moment
 ### ⌨️ Format des commandes
 - [paramètre] : paramètre obligatoire.
 - <paramètre> : paramètre optionnel.
-- {n} : indique un numéro ou un identifiant.
 
 ### ✅ Bonnes pratiques
-- Utilisez `git stash` pour mettre de côté des modifications temporaires sans créer de commit.
-- Préférez `git rebase -i` pour nettoyer votre historique avant de partager vos changements.
-- Créez des tags pour marquer les versions importantes du projet.
-- Utilisez `git bisect` pour trouver rapidement à quel commit un bug a été introduit.
-- Appliquez `git cherry-pick` avec parcimonie et préférez les merges ou rebases quand c'est possible.
+- Créez des branches pour chaque nouvelle fonctionnalité ou correctif.
+- Utilisez des noms de branches descriptifs (feature/nom-fonctionnalité, bugfix/problème).
+- Synchronisez régulièrement vos branches avec la branche principale.
+- Préférez le rebase pour garder un historique propre avant de fusionner dans main/master.
 
 ### ⚠️ Points de vigilance
-- Ne réécrivez jamais l'historique des branches partagées avec `git rebase`.
-- Faites attention avec `git cherry-pick` qui peut créer des doublons de commits.
-- N'utilisez pas `git push --force` après avoir modifié des tags.
-- Vérifiez toujours l'état de votre dépôt avant d'utiliser des commandes destructives.
+- Utilisez `git push --force` avec précaution car cela peut effacer le travail d'autres personnes.
+- Résolvez toujours complètement les conflits avant de terminer un merge/rebase.
+- N'utilisez pas rebase sur des branches partagées/publiées.
+- Vérifiez toujours que vous êtes sur la bonne branche avant de commencer à travailler.
 
 ## Pour aller plus loin
 
 ### 📚 Documentation officielle
-- [git stash](https://git-scm.com/docs/git-stash) - Documentation complète de git stash.
-- [git diff](https://git-scm.com/docs/git-diff) - Documentation complète de git diff.
-- [git bisect](https://git-scm.com/docs/git-bisect) - Documentation complète de git bisect.
-- [git blame](https://git-scm.com/docs/git-blame) - Documentation complète de git blame.
-- [git grep](https://git-scm.com/docs/git-grep) - Documentation complète de git grep.
-- [git cherry-pick](https://git-scm.com/docs/git-cherry-pick) - Documentation complète de git. cherry-pick
+- [git branch](https://git-scm.com/docs/git-branch) - Documentation complète de git branch.
+- [git checkout](https://git-scm.com/docs/git-checkout) - Documentation complète de git checkout.
+- [git switch](https://git-scm.com/docs/git-switch) - Documentation complète de git switch.
+- [git merge](https://git-scm.com/docs/git-merge) - Documentation complète de git merge.
 - [git rebase](https://git-scm.com/docs/git-rebase) - Documentation complète de git rebase.
-- [git tag](https://git-scm.com/docs/git-tag) - Documentation complète de git tag.
+- [git remote](https://git-scm.com/docs/git-remote) - Documentation complète de git remote.
 
 ### 🎓 Ressources d'apprentissage
-- [Git Book - Commandes avancées](https://git-scm.com/book/fr/v2) - Chapitre sur les commandes avancées.
-- [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials) - Tutoriels détaillés sur Git.
-- [Git Explorer](https://gitexplorer.com/) - Outil interactif pour explorer les commandes Git.
+- [Git Book - Les branches avec Git](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref) - Chapitre sur les branches.
+- [Atlassian Git Tutorial - Branches](https://www.atlassian.com/git/tutorials/using-branches) - Guide détaillé sur l'utilisation des branches.
+- [Learn Git Branching](https://learngitbranching.js.org/?locale=fr_FR) - Tutoriel interactif pour apprendre à gérer les branches.
