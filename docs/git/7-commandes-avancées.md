@@ -96,7 +96,7 @@ git push origin <nom_branche>      # Envoie la branche locale vers le dépôt di
 Options disponibles :
 ```bash
 git push --all origin              # Pousse toutes les branches locales vers le dépôt distant origin
-git push --force                   # Force la mise à jour du dépôt distant avec les modifications locales, même si cela écrase les modifications distantes.
+git push --force                   # Force la mise à jour du dépôt distant avec les modifications locales, même si cela écrase les modifications distantes
 git push -u origin <branche>       # Pousse la branche locale branche vers origin et la définit comme la branche de suivi par défaut
 ```
 
@@ -124,39 +124,39 @@ git remote add upstream <url>      # Ajoute un dépôt distant nommé upstream a
 Options disponibles :
 ```bash
 git fetch upstream                 # Télécharge les objets et les références depuis le dépôt distant upstream
-git merge upstream/main            # Fusionne la branche main du dépôt distant upstream dans la branche locale courante.
+git merge upstream/main            # Fusionne la branche main du dépôt distant upstream dans la branche locale courante
 git pull upstream main             # Récupère les modifications de la branche main du dépôt distant upstream et les fusionne dans la branche locale courante
 ```
 
 ## Notes d'utilisation
 
 ### ⌨️ Format des commandes
-- [paramètre] : paramètre obligatoire
-- <paramètre> : paramètre optionnel
+- [paramètre] : paramètre obligatoire.
+- <paramètre> : paramètre optionnel.
 
 ### ✅ Bonnes pratiques
-- Créez des branches pour chaque nouvelle fonctionnalité ou correctif
-- Utilisez des noms de branches descriptifs (feature/nom-fonctionnalité, bugfix/problème)
-- Synchronisez régulièrement vos branches avec la branche principale
-- Préférez le rebase pour garder un historique propre avant de fusionner dans main/master
+- Créez des branches pour chaque nouvelle fonctionnalité ou correctif.
+- Utilisez des noms de branches descriptifs (feature/nom-fonctionnalité, bugfix/problème).
+- Synchronisez régulièrement vos branches avec la branche principale.
+- Préférez le rebase pour garder un historique propre avant de fusionner dans main/master.
 
 ### ⚠️ Points de vigilance
-- Utilisez `git push --force` avec précaution car cela peut effacer le travail d'autres personnes
-- Résolvez toujours complètement les conflits avant de terminer un merge/rebase
-- N'utilisez pas rebase sur des branches partagées/publiées
-- Vérifiez toujours que vous êtes sur la bonne branche avant de commencer à travailler
+- Utilisez `git push --force` avec précaution car cela peut effacer le travail d'autres personnes.
+- Résolvez toujours complètement les conflits avant de terminer un merge/rebase.
+- N'utilisez pas rebase sur des branches partagées/publiées.
+- Vérifiez toujours que vous êtes sur la bonne branche avant de commencer à travailler.
 
 ## Pour aller plus loin
 
 ### 📚 Documentation officielle
-- [git branch](https://git-scm.com/docs/git-branch) - Documentation complète de git branch
-- [git checkout](https://git-scm.com/docs/git-checkout) - Documentation complète de git checkout
-- [git switch](https://git-scm.com/docs/git-switch) - Documentation complète de git switch
-- [git merge](https://git-scm.com/docs/git-merge) - Documentation complète de git merge
-- [git rebase](https://git-scm.com/docs/git-rebase) - Documentation complète de git rebase
-- [git remote](https://git-scm.com/docs/git-remote) - Documentation complète de git remote
+- [git branch](https://git-scm.com/docs/git-branch) - Documentation complète de git branch.
+- [git checkout](https://git-scm.com/docs/git-checkout) - Documentation complète de git checkout.
+- [git switch](https://git-scm.com/docs/git-switch) - Documentation complète de git switch.
+- [git merge](https://git-scm.com/docs/git-merge) - Documentation complète de git merge.
+- [git rebase](https://git-scm.com/docs/git-rebase) - Documentation complète de git rebase.
+- [git remote](https://git-scm.com/docs/git-remote) - Documentation complète de git remote.
 
 ### 🎓 Ressources d'apprentissage
-- [Git Book - Les branches avec Git](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref) - Chapitre sur les branches
-- [Atlassian Git Tutorial - Branches](https://www.atlassian.com/git/tutorials/using-branches) - Guide détaillé sur l'utilisation des branches
-- [Learn Git Branching](https://learngitbranching.js.org/?locale=fr_FR) - Tutoriel interactif pour apprendre à gérer les branches
+- [Git Book - Les branches avec Git](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref) - Chapitre sur les branches.
+- [Atlassian Git Tutorial - Branches](https://www.atlassian.com/git/tutorials/using-branches) - Guide détaillé sur l'utilisation des branches.
+- [Learn Git Branching](https://learngitbranching.js.org/?locale=fr_FR) - Tutoriel interactif pour apprendre à gérer les branches.
