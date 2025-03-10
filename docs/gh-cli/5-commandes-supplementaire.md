@@ -6,10 +6,10 @@
   - [Gestion des authentifications](#gestion-des-authentifications)
   - [Interaction avec l'API](#interaction-avec-lapi)
   - [Organisation et métadonnées](#organisation-et-métadonnées)
-  - [Recherche et statut](#recherche-et-statut)  
+  - [Recherche et statut](#recherche-et-statut)
   - [Notes d'utilisation](#notes-dutilisation)
   - [Pour aller plus loin](#pour-aller-plus-loin)
-  
+
 ## Configuration et personnalisation
 ### 🔄 gh alias
 ```bash
@@ -48,7 +48,7 @@ gh config [set] [clé] [valeur] [--host] [hôte]  # Définir une valeur pour une
 ## Gestion des authentifications
 ### 🔑 gh gpg-key
 ```bash
-gh gpg-key                         # Gérer les clés GPG enregistrées dans votre compte GitHub
+gh gpg-key                           # Gérer les clés GPG enregistrées dans votre compte GitHub
 ```
 Options disponibles :
 ```bash
@@ -60,7 +60,7 @@ gh gpg-key [delete] [clé_id]         # Supprimer une clé GPG de votre compte G
 ## Interaction avec l'API
 ### 🌐 gh api
 ```bash
-gh api                             # Effectuer des requêtes authentifiées vers l'API GitHub.
+gh api                             # Effectuer des requêtes authentifiées vers l'API GitHub
 ```
 Options disponibles :
 ```bash
