@@ -104,12 +104,12 @@ gh run cancel [ID-run] --force # Annuler un run immédiatement, même s'il est e
 - Faites attention à la gestion des secrets dans les workflows afin de ne pas exposer des informations sensibles.
 
 ## Pour aller plus loin
-**### 📚 Documentation officielle**
+### 📚 Documentation officielle
 - [Documentation GitHub CLI](https://cli.github.com/manual/)
 - [Guide de démarrage rapide](https://docs.github.com/en/github-cli/github-cli/quickstart)
 - [FAQ GitHub CLI](https://cli.github.com/manual/gh_help_reference)
 
-**### 👥 Communauté**
+### 👥 Communauté
 - [GitHub Community Forum](https://github.community/)
 - [Stack Overflow [github-cli]](https://stackoverflow.com/questions/tagged/github-cli)
 - [GitHub Discussions](https://github.com/cli/cli/discussions)
