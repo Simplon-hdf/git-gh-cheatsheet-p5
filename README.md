@@ -1,3 +1,10 @@
+<style>
+summary {
+  font-size: 20px;
+  font-weight: bold;
+}
+</style>
+
 # Cheat sheet Git et GitHub CLI
 
 ## 📝 Description
@@ -5,7 +12,7 @@
 Ce guide a pour objectif de fournir une vue d'ensemble sur l'utilisation de **Git** et de **GitHub CLI** pour gérer efficacement le code source et collaborer sur des projets. Il s'adresse à la fois aux développeurs novices qui souhaitent s'initier aux principes de base du contrôle de version, ainsi qu'aux utilisateurs plus expérimentés cherchant à maîtriser des outils avancés pour optimiser leur flux de travail et leurs interactions avec GitHub.
 
 <details>
-  <summary style="font-size: 20px; font-weight: bold;"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" width="24" height="24">
+  <summary><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" width="24" height="24">
  <strong>1. Documentation complète de GitHub CLI</strong></summary>
 <br>
   <li><a href="https://github.com/Simplon-hdf/git-gh-cheatsheet-p5/blob/develop/docs/gh-cli/1-introduction.md">   2.1 Qu'est-ce que GitHub CLI  </a></li>
@@ -21,7 +28,7 @@ Ce guide a pour objectif de fournir une vue d'ensemble sur l'utilisation de **Gi
 </details>
 <br>
 <details>
-  <summary style="font-size: 20px; font-weight: bold;"><img src="https://humancoders-formations.s3.amazonaws.com/uploads/course/logo/10/formation-git.png" alt="Git Logo" width="24" height="24">
+  <summary><img src="https://humancoders-formations.s3.amazonaws.com/uploads/course/logo/10/formation-git.png" alt="Git Logo" width="24" height="24">
 <strong>2. Documentation complète de Git</strong></summary>
   <br>
   <li><a href="https://github.com/Simplon-hdf/git-gh-cheatsheet-p5/blob/develop/docs/git/1-introduction.md">   2.1 Qu'est-ce que Git  </a></li>
@@ -41,7 +48,7 @@ Ce guide a pour objectif de fournir une vue d'ensemble sur l'utilisation de **Gi
 </details>
 <br>
 <details>
-  <summary style="font-size: 20px; font-weight: bold;">❓ But du projet</summary>
+  <summary>❓ But du projet</summary>
 
 Ce projet a pour objectif de fournir une **vue d'ensemble complète** des outils **Git** et **GitHub CLI**.
 Il regroupe les principales commandes et fonctionnalités de **Git** et **GitHub** en un seul endroit,
@@ -54,7 +61,7 @@ afin de maîtriser les outils de versionnement et de gestion de projet.
 </details>
 <br>
 <details> 
-<summary style="font-size: 20px; font-weight: bold;"> ⚙️ Built with</summary>
+<summary> ⚙️ Built with</summary>
 
 <ul>
 <li>
@@ -77,7 +84,7 @@ afin de maîtriser les outils de versionnement et de gestion de projet.
 
 <br>
 <details>
-  <summary style="font-size: 20px; font-weight: bold;">🧑‍🔧 Vous voulez contribuer au projet ?</summary>
+  <summary>🧑‍🔧 Vous voulez contribuer au projet ?</summary>
 
 Vous devez suivre plusieurs étapes pour y participer :
 
@@ -109,7 +116,7 @@ Vous devez suivre plusieurs étapes pour y participer :
 
 <br>
 <details>
-  <summary style="font-size: 20px; font-weight: bold;">🧑‍💻 Crédits</summary>
+  <summary>🧑‍💻 Crédits</summary>
 
 Merci aux personnes qui ont contribué à ce projet !
 
